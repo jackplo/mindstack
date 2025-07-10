@@ -1,6 +1,5 @@
 import EventEmitter from 'events'
-import langChain from '../llm/langChain'
-import promptBuilder from '../llm/promptBuilder'
+import agent from '../llm/agent'
 import editor from '@/store/editor'
 
 class ChatService extends EventEmitter {
@@ -8,13 +7,9 @@ class ChatService extends EventEmitter {
     const requestId = options.requestId || this._generateRequestId()
 
     try {
-      let context = this.getDocumentContext()
+      const response = await agent.invoke(message)
 
-      const prompt = await promptBuilder.buildPrompt(message, context)
-
-      const response = await langChain.invoke(prompt)
-
-      this.emit('chat-response', { data: response.content || response, requestId })
+      this.emit('chat-response', { data: response || response, requestId })
 
       return response.content || response
     } catch (error) {

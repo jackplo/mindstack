@@ -37,6 +37,7 @@
     "@electron/remote": "^2.0.8",
     "@hfelix/electron-localshortcut": "^4.0.1",
     "@langchain/core": "^0.3.62",
+    "@langchain/langgraph": "^0.3.7",
     "@langchain/openai": "^0.5.18",
     "@marktext/file-icons": "^1.0.6",
     "@octokit/rest": "^18.12.0",
@@ -83,6 +84,7 @@
     "underscore": "^1.13.2",
     "undici": "^7.11.0",
     "unsplash-js": "^7.0.15",
+    "uuid": "^11.1.0",
     "vega": "^5.22.1",
     "vega-embed": "^6.20.8",
     "vega-lite": "^5.2.0",
@@ -92,7 +94,8 @@
     "vue-router": "^3.5.3",
     "vuex": "^3.6.2",
     "web-streams-polyfill": "^4.1.0",
-    "webfontloader": "^1.6.28"
+    "webfontloader": "^1.6.28",
+    "zod": "^4.0.2"
   },
   "devDependencies": {
     "@babel/core": "^7.17.9",

@@ -1716,6 +1716,33 @@
     zod "^3.25.32"
     zod-to-json-schema "^3.22.3"
 
+"@langchain/langgraph-checkpoint@~0.0.18":
+  version "0.0.18"
+  resolved "https://registry.yarnpkg.com/@langchain/langgraph-checkpoint/-/langgraph-checkpoint-0.0.18.tgz#2f7a9cdeda948ccc8d312ba9463810709d71d0b8"
+  integrity sha512-IS7zJj36VgY+4pf8ZjsVuUWef7oTwt1y9ylvwu0aLuOn1d0fg05Om9DLm3v2GZ2Df6bhLV1kfWAM0IAl9O5rQQ==
+  dependencies:
+    uuid "^10.0.0"
+
+"@langchain/langgraph-sdk@~0.0.90":
+  version "0.0.91"
+  resolved "https://registry.yarnpkg.com/@langchain/langgraph-sdk/-/langgraph-sdk-0.0.91.tgz#c363e4a66ea4a88b522d0e0807b99eccbf382e22"
+  integrity sha512-yFcNNaaNeKiJnJIZOdUvXThCgQGC5ujMWNQ3NxjtVGM8HgrfPGIsraD/VZKuU0dYFT1hdd4uKCWHQZcWNwXaZA==
+  dependencies:
+    "@types/json-schema" "^7.0.15"
+    p-queue "^6.6.2"
+    p-retry "4"
+    uuid "^9.0.0"
+
+"@langchain/langgraph@^0.3.7":
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/@langchain/langgraph/-/langgraph-0.3.7.tgz#7ff908e82ce307a0b686008cad78ba69604babe8"
+  integrity sha512-Cc0VUtuwFziCNqTNvD1QUNpMzhe9r8tTDIxFgpCwbF8oTNXxZ1tcd/iY9wr7gV5WhZm8DHEpZf3h4z3gFNeNMA==
+  dependencies:
+    "@langchain/langgraph-checkpoint" "~0.0.18"
+    "@langchain/langgraph-sdk" "~0.0.90"
+    uuid "^10.0.0"
+    zod "^3.25.32"
+
 "@langchain/openai@>=0.1.0 <0.6.0", "@langchain/openai@^0.5.18":
   version "0.5.18"
   resolved "https://registry.yarnpkg.com/@langchain/openai/-/openai-0.5.18.tgz#59ebbf48044d711ce9503d3b9854a3533cb54683"
@@ -2218,6 +2245,11 @@
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
   integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
+
+"@types/json-schema@^7.0.15":
+  version "7.0.15"
+  resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
+  integrity sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA==
 
 "@types/json-schema@^7.0.4":
   version "7.0.4"
@@ -12824,6 +12856,11 @@ uuid@^10.0.0:
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-10.0.0.tgz#5a95aa454e6e002725c79055fd42aaba30ca6294"
   integrity sha512-8XkAphELsDnEGrDxUOHB3RGvXz6TeuYSGEZBOjtTtPm2lwhGBjLgOzLHB63IUWfBpNucQjND6d3AOudO+H3RWQ==
 
+uuid@^11.1.0:
+  version "11.1.0"
+  resolved "https://registry.yarnpkg.com/uuid/-/uuid-11.1.0.tgz#9549028be1753bb934fc96e2bca09bb4105ae912"
+  integrity sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A==
+
 uuid@^3.4.0:
   version "3.4.0"
   resolved "https://registry.yarnpkg.com/uuid/-/uuid-3.4.0.tgz#b23e4358afa8a202fe7a100af1f5f883f02007ee"
@@ -13939,3 +13976,8 @@ zod@^3.25.32:
   version "3.25.76"
   resolved "https://registry.yarnpkg.com/zod/-/zod-3.25.76.tgz#26841c3f6fd22a6a2760e7ccb719179768471e34"
   integrity sha512-gzUt/qt81nXsFGKIFcC3YnfEAx5NkunCfnDlvuBSSFS02bcXu4Lmea0AFIUwbLWxWPx3d9p8S5QoaujKcNQxcQ==
+
+zod@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/zod/-/zod-4.0.2.tgz#7d36625c30d8ea8592868baed7e7089f5ffb15d3"
+  integrity sha512-X2niJNY54MGam4L6Kj0AxeedeDIi/E5QFW0On2faSX5J4/pfLk1tW+cRMIMoojnCavn/u5W/kX17e1CSGnKMxA==
