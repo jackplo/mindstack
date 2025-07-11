@@ -52,10 +52,6 @@ MindStack is an AI-enhanced markdown editor built on top of the excellent MarkTe
 
 Whether you're a researcher, writer, or student, MindStack provides intelligent assistance that understands context, suggests improvements, and helps organize your thoughts more effectively.
 
-## Screenshot
-
-![](docs/marktext.png?raw=true)
-
 ## Features
 
 ### Core Markdown Features
@@ -91,21 +87,6 @@ MindStack leverages artificial intelligence to enhance your writing and note-tak
 - **Outline generation**: Create structured outlines from your ideas
 - **Template suggestions**: Smart templates based on your writing goals
 
-<h4 align="center">🌙 Themes 🌞</h4>
-
-| Cadmium Light                                     | Dark                                            |
-|:-------------------------------------------------:|:-----------------------------------------------:|
-| ![](docs/themeImages/cadmium-light.png?raw=true)  | ![](docs/themeImages/dark.png?raw=true)         |
-| Graphite Light                                    | Material Dark                                   |
-| ![](docs/themeImages/graphite-light.png?raw=true) | ![](docs/themeImages/materal-dark.png?raw=true) |
-| Ulysses Light                                     | One Dark                                        |
-| ![](docs/themeImages/ulysses-light.png?raw=true)  | ![](docs/themeImages/one-dark.png?raw=true)     |
-
-<h4 align="center">🎯 Edit Modes 📝</h4>
-
-| Source Code          | Typewriter               | Focus               |
-|:--------------------:|:------------------------:|:-------------------:|
-| ![](docs/source.gif) | ![](docs/typewriter.gif) | ![](docs/focus.gif) |
 
 ## Why MindStack?
 
@@ -118,12 +99,6 @@ MindStack leverages artificial intelligence to enhance your writing and note-tak
 4. **For Knowledge Workers**: Whether you're a researcher, writer, student, or professional, MindStack adapts to your workflow and helps you work more efficiently.
 
 5. **Open Source**: MindStack is free and open source, allowing the community to contribute and improve the AI capabilities together.
-
-## Download and Installation
-
-![platform](https://img.shields.io/static/v1.svg?label=Platform&message=Linux-64%20|%20macOS-64%20|%20Win-32%20|%20Win-64&style=for-the-badge)
-
-> **Note**: MindStack is currently in active development.
 
 ### Building from Source
 
@@ -143,8 +118,6 @@ npm run build
 # Run in development mode
 npm run dev
 ```
-
-For detailed build instructions, please check our [build documentation](docs/dev/BUILD.md).
 
 ## AI Configuration
 
@@ -186,8 +159,6 @@ We welcome contributions to MindStack! Whether you're interested in:
 - UI/UX improvements
 - Documentation
 - Testing and bug reports
-
-Please read our [Contributing Guide](CONTRIBUTING.md) before making a pull request.
 
 ## Acknowledgments
 
