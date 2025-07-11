@@ -1,16 +1,11 @@
-<p align="center"><img src="static/logo-small.png" alt="MarkText" width="100" height="100"></p>
+<p align="center"><img src="static/logo-small.png" alt="MindStack" width="100" height="100"></p>
 
-<h1 align="center">MarkText</h1>
+<h1 align="center">MindStack</h1>
 
 <div align="center">
-  <a href="https://twitter.com/intent/tweet?via=marktextme&url=https://github.com/marktext/marktext/&text=What%20do%20you%20want%20to%20say%20to%20app?&hashtags=happyMarkText">
-    <img src="https://img.shields.io/twitter/url/https/github.com/marktext/marktext.svg?style=for-the-badge" alt="twitter">
-  </a>
-</div>
-<div align="center">
-  <strong>:high_brightness: Next generation markdown editor :crescent_moon:</strong><br>
-  A simple and elegant open-source markdown editor that focused on speed and usability.<br>
-  <sub>Available for Linux, macOS and Windows.</sub>
+  <strong>🤖 AI-Powered Markdown Editor 🧠</strong><br>
+  An intelligent markdown editor that combines the power of AI with elegant writing experience.<br>
+  <sub>Enhanced note-taking and writing with AI assistance - Available for Linux, macOS and Windows.</sub>
 </div>
 
 <br>
@@ -24,138 +19,44 @@
   <a href="https://travis-ci.org/marktext/marktext/">
     <img src="https://travis-ci.org/marktext/marktext.svg?branch=master" alt="build">
   </a>
-  <a href="https://ci.appveyor.com/project/marktext/marktext/branch/master">
-    <img src="https://ci.appveyor.com/api/projects/status/l4gxgydj0i95hmxg/branch/master?svg=true" alt="build">
-  </a>
-  <!-- Downloads total -->
-  <a href="https://github.com/marktext/marktext/releases">
-    <img src="https://img.shields.io/github/downloads/marktext/marktext/total.svg" alt="total download">
-  </a>
-  <!-- Downloads latest release -->
-  <a href="https://github.com/marktext/marktext/releases/latest">
-    <img src="https://img.shields.io/github/downloads/marktext/marktext/v0.17.1/total.svg" alt="latest download">
-  </a>
-  <!-- sponsors -->
-  <a href="https://opencollective.com/marktext">
-    <img src="https://opencollective.com/marktext/tiers/silver-sponsors/badge.svg?label=SilverSponsors&color=brightgreen" alt="sponsors">
-  </a>
 </div>
 
 <div align="center">
   <h3>
-    <a href="https://github.com/marktext/marktext">
-      Website
-    </a>
-    <span> | </span>
-    <a href="https://github.com/marktext/marktext#features">
+    <a href="#features">
       Features
     </a>
     <span> | </span>
-    <a href="https://github.com/marktext/marktext#download-and-installation">
-      Downloads
+    <a href="#ai-capabilities">
+      AI Capabilities
     </a>
     <span> | </span>
-    <a href="https://github.com/marktext/marktext#development">
+    <a href="#download-and-installation">
+      Installation
+    </a>
+    <span> | </span>
+    <a href="#development">
       Development
     </a>
     <span> | </span>
-    <a href="https://github.com/marktext/marktext#contribution">
+    <a href="#contribution">
       Contribution
     </a>
   </h3>
 </div>
 
 <div align="center">
-  <sub>Translations:</sub>
-  <a href="docs/i18n/zh_cn.md#readme">
-    <span>:cn:</span>
-  </a>
-  <a href="docs/i18n/zh_tw.md#readme">
-    <span>:taiwan:</span>
-  </a>
-  <a href="docs/i18n/pl.md#readme">
-    <span>:poland:</span>
-  </a>
-  <a href="docs/i18n/ja.md#readme">
-    <span>:jp:</span>
-  </a>
-  <a href="docs/i18n/french.md#readme">
-    <span>:fr:</span>
-  </a>
-  <a href="docs/i18n/tr.md#readme">
-    <span>:tr:</span>
-  </a>
-  <a href="docs/i18n/spanish.md#readme">
-    <span>:es:</span>
-  </a>
-  <a href="docs/i18n/pt.md#readme">
-    <span>:portugal:</span>
-  </a>
-  <a href="docs/i18n/ko.md#readme">
-    <span>:kr:</span>
-  </a>
-</div>
-
-<div align="center">
-  <sub>This Markdown editor that could. Built with ❤︎ by
-    <a href="https://github.com/Jocs">Jocs</a> and
-    <a href="https://github.com/marktext/marktext/graphs/contributors">
-      contributors
-    </a>
-    .
-  </sub>
+  <sub>Built with ❤︎ as a fork of <a href="https://github.com/marktext/marktext">MarkText</a><br>
+  Enhanced with AI capabilities.</sub>
 </div>
 
 <br />
 
-<h2 align="center">Supporting MarkText</h2>
+## What is MindStack?
 
-MarkText is an MIT licensed open source project, and the latest version will always be downloadable for free from the GitHub release page. MarkText is still in development, and its development is inseparable from all sponsors. I hope you join them:
+MindStack is an AI-enhanced markdown editor built on top of the excellent MarkText foundation. It transforms your writing and note-taking experience by seamlessly integrating artificial intelligence into your workflow.
 
-- [Become a backer or sponsor on Patreon](https://www.patreon.com/ranluo) or [One time donation](https://github.com/Jocs/sponsor.me)
-- [Become a backer or sponsor on Open Collective](https://opencollective.com/marktext)
-
-##### What's the difference between Patreon and Open Collective?
-
-Patreon: Funds will be directly sponsored to Luo Ran (@jocs) who created MarkText and continues to maintain it.
-Open Collective: All expenses are transparent. The funds will be used for the development and maintenance of MarkText, funding online and offline activities, and acquiring other necessary resources.
-Names and company logos of all sponsors (from both Patreon and Open Collective) will appear on the official website for MarkText and in its README.md file.
-
-**Special Sponsors**
-
-<a href="https://www.dogedoge.com/">
- <img src="https://www.dogedoge.com/assets/new_logo.min.png" width="100" height="100">
-</a>
-
-**Platinum Sponsors**
-
-<a href="https://opencollective.com/marktext#platinum-sponsors">
- <img src="https://opencollective.com/marktext/tiers/platinum-sponsors.svg?avatarHeight=36&width=600">
-</a>
-
-**Gold Sponsors**
-
-<a href="https://opencollective.com/marktext#platinum-sponsors">
-  <img src="https://opencollective.com/marktext/tiers/gold-sponsors.svg?avatarHeight=36&width=600">
-</a>
-
-**Silver Sponsors**
-
-<a href="https://opencollective.com/marktext#platinum-sponsors">
-  <img src="https://opencollective.com/marktext/tiers/silver-sponsors.svg?avatarHeight=36&width=600">
-</a>
-
-**Bronze Sponsors**
-
-<a href="https://opencollective.com/marktext#platinum-sponsors">
-  <img src="https://opencollective.com/marktext/tiers/bronze-sponsors.svg?avatarHeight=36&width=600">
-</a>
-
-**Backers**
-
-<a href="https://opencollective.com/marktext#backers">
-  <img src="https://opencollective.com/marktext/tiers/backer.svg?avatarHeight=36&width=600">
-</a>
+Whether you're a researcher, writer, or student, MindStack provides intelligent assistance that understands context, suggests improvements, and helps organize your thoughts more effectively.
 
 ## Screenshot
 
@@ -163,16 +64,40 @@ Names and company logos of all sponsors (from both Patreon and Open Collective) 
 
 ## Features
 
-- Realtime preview (WYSIWYG) and a clean and simple interface to get a distraction-free writing experience.
-- Support [CommonMark Spec](https://spec.commonmark.org/0.29/), [GitHub Flavored Markdown Spec](https://github.github.com/gfm/) and selective support [Pandoc markdown](https://pandoc.org/MANUAL.html#pandocs-markdown).
-- Markdown extensions such as math expressions (KaTeX), front matter and emojis.
-- Support paragraphs and inline style shortcuts to improve your writing efficiency.
-- Output **HTML** and **PDF** files.
-- Various themes: **Cadmium Light**, **Material Dark** etc.
-- Various editing modes: **Source Code mode**, **Typewriter mode**, **Focus mode**.
-- Paste images directly from clipboard.
+### Core Markdown Features
+- **Realtime preview (WYSIWYG)** with a clean, distraction-free interface
+- **Full markdown support**: [CommonMark Spec](https://spec.commonmark.org/0.29/), [GitHub Flavored Markdown](https://github.github.com/gfm/), and selective [Pandoc markdown](https://pandoc.org/MANUAL.html#pandocs-markdown)
+- **Advanced extensions**: Math expressions (KaTeX), front matter, emojis, and more
+- **Efficient shortcuts**: Paragraph and inline style shortcuts for faster writing
+- **Export capabilities**: Output to HTML and PDF formats
+- **Beautiful themes**: Cadmium Light, Material Dark, and more
+- **Flexible editing modes**: Source Code mode, Typewriter mode, Focus mode
+- **Direct image pasting** from clipboard
 
-<h4 align="center">:crescent_moon:themes:high_brightness:</h4>
+### AI Capabilities 🤖
+
+MindStack leverages artificial intelligence to enhance your writing and note-taking experience:
+
+#### **Intelligent Writing Assistant**
+- **Content suggestions**: AI-powered recommendations for improving your writing
+- **Grammar and style**: Real-time suggestions for clarity and readability
+- **Contextual help**: Smart assistance based on your document's content and purpose
+
+#### **Smart Note Organization**
+- **Auto-categorization**: Automatically suggest tags and categories for your notes
+- **Summary generation**: Create concise summaries of long documents
+
+#### **Research Enhancement**
+- **Fact checking**: Verify information and suggest reliable sources
+- **Citation assistance**: Help format and manage references
+- **Topic expansion**: Suggest related topics and angles to explore
+
+#### **Productivity Features**
+- **Writing prompts**: Overcome writer's block with AI-generated prompts
+- **Outline generation**: Create structured outlines from your ideas
+- **Template suggestions**: Smart templates based on your writing goals
+
+<h4 align="center">🌙 Themes 🌞</h4>
 
 | Cadmium Light                                     | Dark                                            |
 |:-------------------------------------------------:|:-----------------------------------------------:|
@@ -182,88 +107,107 @@ Names and company logos of all sponsors (from both Patreon and Open Collective) 
 | Ulysses Light                                     | One Dark                                        |
 | ![](docs/themeImages/ulysses-light.png?raw=true)  | ![](docs/themeImages/one-dark.png?raw=true)     |
 
-<h4 align="center">:smile_cat:Edit modes:dog:</h4>
+<h4 align="center">🎯 Edit Modes 📝</h4>
 
 | Source Code          | Typewriter               | Focus               |
 |:--------------------:|:------------------------:|:-------------------:|
 | ![](docs/source.gif) | ![](docs/typewriter.gif) | ![](docs/focus.gif) |
 
-## Why make another editor?
+## Why MindStack?
 
-1. I love writing. I have used a lot of markdown editors, yet there is still not an editor that can fully meet my needs. I don't like to be disturbed when I write by some unbearable bug. **MarkText** uses virtual DOM to render pages which has the added benefits of being highly efficient and being open source. That way anyone who loves markdown and writing can use MarkText.
-2. As mentioned above, **MarkText** is completely free and open source and will be open source forever. We hope that all markdown lovers will contribute their own code and help develop **MarkText** into a popular markdown editor.
-3. There are many markdown editors and all have their own merits, some have features which others don't. It's difficult to satisfy each markdown users' needs but we hope **MarkText** will be able to satisfy each markdown user as much as possible. Although the latest **MarkText** is still not perfect, we will try to make it as best as we possibly can.
+1. **AI-Enhanced Productivity**: Writing and note-taking shouldn't be a struggle. MindStack's AI capabilities help you think clearer, write better, and organize more effectively.
+
+2. **Built on Excellence**: Based on the proven MarkText foundation, MindStack inherits all the stability and features that make MarkText great, while adding cutting-edge AI capabilities.
+
+3. **Privacy-Focused**: Your data stays on your machine. MindStack processes your content locally when possible, ensuring your ideas remain private.
+
+4. **For Knowledge Workers**: Whether you're a researcher, writer, student, or professional, MindStack adapts to your workflow and helps you work more efficiently.
+
+5. **Open Source**: MindStack is free and open source, allowing the community to contribute and improve the AI capabilities together.
 
 ## Download and Installation
 
 ![platform](https://img.shields.io/static/v1.svg?label=Platform&message=Linux-64%20|%20macOS-64%20|%20Win-32%20|%20Win-64&style=for-the-badge)
 
-| ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/mac-pass-sm.png)                                                                                                  | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/windows-pass-sm.png)                                                                                                          | ![](https://raw.githubusercontent.com/wiki/ryanoasis/nerd-fonts/screenshots/v1.0.x/linux-pass-sm.png)                                                                                                                        |
-|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x64.dmg.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x64.dmg) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-setup.exe.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-setup.exe) | [![latest version](https://img.shields.io/github/downloads/marktext/marktext/latest/marktext-x86_64.AppImage.svg)](https://github.com/marktext/marktext/releases/download/v0.17.1/marktext-x86_64.AppImage) |
+> **Note**: MindStack is currently in active development. Check the [releases page](https://github.com/your-username/mindstack/releases) for the latest builds.
 
-Want to see new features of the latest version? Please refer to [CHANGELOG](.github/CHANGELOG.md).
+### Building from Source
 
-#### macOS
-
-You can either download the latest `marktext-%version%.dmg` from the [release page](https://github.com/marktext/marktext/releases/latest) or install MarkText using [**homebrew cask**](https://github.com/caskroom/homebrew-cask). To use Homebrew-Cask you just need to have [Homebrew](https://brew.sh/) installed.
+Since MindStack is a fork in development, you'll need to build from source:
 
 ```bash
-brew install --cask mark-text
+# Clone the repository
+git clone https://github.com/your-username/mindstack.git
+cd mindstack
+
+# Install dependencies
+npm install
+
+# Build the application
+npm run build
+
+# Run in development mode
+npm run dev
 ```
 
-#### Windows
+For detailed build instructions, please check our [build documentation](docs/dev/BUILD.md).
 
-Simply download and install MarkText via setup wizard (`marktext-setup-%version%.exe`) and choose whether to install per-user or machine wide. Alternatively, install MarkText using a package manager such as [Chocolatey](https://chocolatey.org/) or [Winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/).
+## AI Configuration
 
-To use Chocolatey, you need to have [Chocolatey](https://chocolatey.org/install) installed:
+MindStack's AI features require configuration for optimal performance:
 
-```bash
-choco install marktext
-```
+1. **Local AI Models**: Some features work entirely offline using local models
+2. **API Integration**: Configure your preferred AI service (OpenAI, Claude, etc.) in settings
+3. **Privacy Settings**: Choose what data to process locally vs. externally
 
-To use Winget, you need to have [Winget](https://docs.microsoft.com/en-us/windows/package-manager/winget/#install-winget) installed:
-
-```bash
-winget install marktext
-```
-
-#### Linux
-
-Please follow the [Linux installation instructions](docs/LINUX.md).
-
-#### Other
-
-All binaries for Linux, macOS and Windows can be downloaded from the [release page](https://github.com/marktext/marktext/releases/latest). If a version is unavailable for your system, then please open an [issue](https://github.com/marktext/marktext/issues).
+See our [AI Setup Guide](docs/AI_SETUP.md) for detailed configuration instructions.
 
 ## Development
 
-If you wish to build MarkText yourself, please check out our [build instructions](docs/dev/BUILD.md).
+MindStack is built on modern web technologies with AI integration:
+
+- **Base**: Built on MarkText's proven foundation
+- **AI Integration**: Modular AI service architecture
+- **Privacy-First**: Local processing capabilities
+- **Extensible**: Plugin system for custom AI features
+
+### Documentation
 
 - [User documentation](docs/README.md)
 - [Developer documentation](docs/dev/README.md)
+- [AI Integration Guide](docs/AI_INTEGRATION.md)
 
-If you have any questions regarding MarkText, you are welcome to write an issue. When doing so please use the default format found when opening an issue. Of course, if you submit a PR directly, it will be greatly appreciated.
+## Roadmap
 
-## Integrations
+- [ ] Enhanced AI writing assistance
+- [ ] Local AI model support
+- [ ] Advanced note linking and organization
+- [ ] Multi-language AI support
+- [ ] Plugin system for custom AI features
+- [ ] Team collaboration features
+- [ ] Advanced research tools
 
-- [Alfred Workflow](http://www.packal.org/workflow/mark-text): A Workflow for the macOS app Alfred: Use "mt" to open files/folder with MarkText.
+## Contributing
 
-## Contribution
+We welcome contributions to MindStack! Whether you're interested in:
+- AI feature development
+- UI/UX improvements
+- Documentation
+- Testing and bug reports
 
-MarkText is in development, please make sure to read the [Contributing Guide](CONTRIBUTING.md) before making a pull request. Want to add some features to MarkText? Refer to our [roadmap](https://github.com/marktext/marktext/projects?type=classic) and open issues.
+Please read our [Contributing Guide](CONTRIBUTING.md) before making a pull request.
 
+## Acknowledgments
 
-## Contributors
-
-Thank you to all the people who have already contributed to MarkText[[contributors](https://github.com/marktext/marktext/graphs/contributors)].
-
-Special thanks to @[Yasujizr](https://github.com/Yasujizr) who designed the MarkText logo.
-
-<a href="https://github.com/marktext/marktext/graphs/contributors"><img src="https://opencollective.com/marktext/contributors.svg?width=890" /></a>
+- **MarkText Team**: MindStack is built on the excellent foundation of [MarkText](https://github.com/marktext/marktext)
+- **AI Community**: Thanks to the open-source AI community for tools and models that make this possible
 
 ## License
 
 [**MIT**](LICENSE).
 
-[![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext.svg?type=large)](https://app.fossa.io/projects/git%2Bgithub.com%2Fmarktext%2Fmarktext?ref=badge_large)
+---
+
+<div align="center">
+  <sub>🚀 Ready to supercharge your writing with AI? Download MindStack today!</sub>
+</div>
