@@ -45,14 +45,13 @@ export default {
   max-width: 100%;
   padding: 8px 12px;
   border-radius: 6px;
-  color: white;
+  color: var(--sideBarColor);
   position: relative;
 }
 
 .own-message .message-content {
   background: var(--editorBgColor);
   border: 1px solid var(--itemBgColor);
-  color: white;
 }
 
 .message-text {
@@ -60,10 +59,7 @@ export default {
   line-height: 1.4;
   word-wrap: break-word;
   white-space: pre-wrap;
-}
-
-.own-message .message-time {
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--sideBarColor);
 }
 
 @keyframes fadeIn {

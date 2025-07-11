@@ -69,7 +69,6 @@ export default {
 
       console.log(this.messages)
 
-      // Send message to AI service
       await this.sendToAI(messageText)
     },
     async sendToAI (userMessage) {
@@ -77,7 +76,7 @@ export default {
         return
       }
       this.isWaitingForResponse = true
-      // Add a loading message
+
       const loadingMessage = {
         id: this.messageIdCounter++,
         text: 'Thinking...',
@@ -87,8 +86,8 @@ export default {
       }
       this.messages.push(loadingMessage)
       this.scrollToBottom()
+
       try {
-        // Send message to AI service with document context
         const response = await chatService.sendMessageAsync(userMessage, {
           includeContext: true,
           contextOptions: {
@@ -97,10 +96,8 @@ export default {
           }
         })
 
-        // Remove loading message
         this.messages = this.messages.filter(m => m.id !== loadingMessage.id)
 
-        // Add AI response
         const aiMessage = {
           id: this.messageIdCounter++,
           text: response,
@@ -110,10 +107,8 @@ export default {
         this.messages.push(aiMessage)
         this.scrollToBottom()
       } catch (error) {
-        // Remove loading message
         this.messages = this.messages.filter(m => m.id !== loadingMessage.id)
 
-        // Add error message
         const errorMessage = {
           id: this.messageIdCounter++,
           text: `Error: ${error.message}`,
@@ -186,7 +181,6 @@ export default {
   position: relative;
   color: var(--sideBarColor);
   user-select: none;
-  background: var(--sideBarBgColor);
 }
 
 .drag-bar {
@@ -198,6 +192,7 @@ export default {
   width: 3px;
   cursor: col-resize;
   z-index: 10;
+  background: var(--sideBarBgColor);
 }
 
 .drag-bar:hover {
@@ -257,7 +252,6 @@ export default {
 
 .chat-messages {
   padding: 10px;
-  min-height: 100%;
 }
 
 .empty-state {

@@ -244,6 +244,9 @@ export default {
 </script>
 
 <style scoped>
+  .title {
+    background: var(--editorBgColor);
+  }
   .title-bar-editor-bg {
     height: var(--titleBarHeight);
     background: var(--editorBgColor);

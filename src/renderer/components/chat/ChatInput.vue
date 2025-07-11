@@ -79,6 +79,7 @@ export default {
   padding-bottom: 10px;
   padding-right: 6px;
   padding-left: 6px;
+  background: var(--sideBarBgColor);
 }
 
 .chat-input-wrapper {
@@ -100,7 +101,7 @@ export default {
   border: none;
   outline: none;
   background: transparent;
-  color: var(--editorColor);
+  color: var(--sideBarColor);
   font-family: var(--editorFontFamily);
   font-size: 14px;
   line-height: 20px;
@@ -109,7 +110,7 @@ export default {
 }
 
 .chat-textarea::placeholder {
-  color: var(--editorColor50);
+  color: var(--sideBarColor);
 }
 
 .chat-send-button {
