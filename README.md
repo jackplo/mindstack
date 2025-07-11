@@ -1,5 +1,3 @@
-<p align="center"><img src="static/logo-small.png" alt="MindStack" width="100" height="100"></p>
-
 <h1 align="center">MindStack</h1>
 
 <div align="center">
@@ -14,10 +12,6 @@
   <!-- License -->
   <a href="LICENSE">
     <img src="https://img.shields.io/github/license/marktext/marktext.svg" alt="LICENSE">
-  </a>
-  <!-- Build Status -->
-  <a href="https://travis-ci.org/marktext/marktext/">
-    <img src="https://travis-ci.org/marktext/marktext.svg?branch=master" alt="build">
   </a>
 </div>
 
@@ -129,7 +123,7 @@ MindStack leverages artificial intelligence to enhance your writing and note-tak
 
 ![platform](https://img.shields.io/static/v1.svg?label=Platform&message=Linux-64%20|%20macOS-64%20|%20Win-32%20|%20Win-64&style=for-the-badge)
 
-> **Note**: MindStack is currently in active development. Check the [releases page](https://github.com/your-username/mindstack/releases) for the latest builds.
+> **Note**: MindStack is currently in active development.
 
 ### Building from Source
 
@@ -159,8 +153,6 @@ MindStack's AI features require configuration for optimal performance:
 1. **Local AI Models**: Some features work entirely offline using local models
 2. **API Integration**: Configure your preferred AI service (OpenAI, Claude, etc.) in settings
 3. **Privacy Settings**: Choose what data to process locally vs. externally
-
-See our [AI Setup Guide](docs/AI_SETUP.md) for detailed configuration instructions.
 
 ## Development
 
