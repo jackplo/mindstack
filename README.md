@@ -106,7 +106,7 @@ Since MindStack is a fork in development, you'll need to build from source:
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/mindstack.git
+git clone https://github.com/jackplo/mindstack.git
 cd mindstack
 
 # Install dependencies
