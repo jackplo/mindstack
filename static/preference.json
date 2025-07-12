@@ -12,6 +12,8 @@
   "defaultDirectoryToOpen": "",
   "language": "en",
 
+  "openaiApiKey": "",
+
   "editorFontFamily": "Open Sans",
   "fontSize": 16,
   "lineHeight": 1.6,

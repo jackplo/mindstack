@@ -16,6 +16,9 @@ const state = {
   defaultDirectoryToOpen: '',
   language: 'en',
 
+  // Chat Setting States
+  openaiApiKey: '',
+
   editorFontFamily: 'Open Sans',
   fontSize: 16,
   lineHeight: 1.6,

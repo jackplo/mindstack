@@ -5,6 +5,7 @@ import ThemeIcon from '@/assets/icons/pref_theme.svg'
 import ImageIcon from '@/assets/icons/pref_image.svg'
 import SpellIcon from '@/assets/icons/pref_spellcheck.svg'
 import KeyBindingIcon from '@/assets/icons/pref_key_binding.svg'
+import ChatIcon from '@/assets/icons/sparkle.svg'
 
 import preferences from '../../../main/preferences/schema'
 
@@ -13,6 +14,11 @@ export const category = [{
   label: 'general',
   icon: GeneralIcon,
   path: '/preference/general'
+}, {
+  name: 'Chat',
+  label: 'chat',
+  icon: ChatIcon,
+  path: '/preference/chat'
 }, {
   name: 'Editor',
   label: 'editor',

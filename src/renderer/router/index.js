@@ -7,6 +7,7 @@ import SpellChecker from '@/prefComponents/spellchecker'
 import Theme from '@/prefComponents/theme'
 import Image from '@/prefComponents/image'
 import Keybindings from '@/prefComponents/keybindings'
+import Chat from '@/prefComponents/chat'
 
 const parseSettingsPage = type => {
   let pageUrl = '/preference'
@@ -39,6 +40,8 @@ const routes = type => ([{
     path: 'image', component: Image, name: 'image'
   }, {
     path: 'keybindings', component: Keybindings, name: 'keybindings'
+  }, {
+    path: 'chat', component: Chat, name: 'chat'
   }]
 }])
 

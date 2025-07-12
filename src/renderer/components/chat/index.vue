@@ -9,6 +9,11 @@
     <div class="chat-content">
       <div class="chat-header">
         <div class="chat-title">Chat</div>
+        <div class="chat-setting-icon" tooltip="Chat Settings" @click="openChatSettings">
+          <svg :viewBox="settingIcon.viewBox">
+            <use :xlink:href="settingIcon.url"></use>
+          </svg>
+        </div>
       </div>
       <div class="chat-messages-container" ref="messagesContainer">
         <div class="chat-messages">
@@ -26,6 +31,7 @@
 </template>
 
 <script>
+import SettingIcon from '@/assets/icons/setting.svg'
 import { mapState } from 'vuex'
 import ChatInput from './ChatInput.vue'
 import ChatMessage from './ChatMessage.vue'
@@ -38,6 +44,7 @@ export default {
     ChatMessage
   },
   data () {
+    this.settingIcon = SettingIcon
     return {
       chatPanelViewWidth: 280,
       messages: [],
@@ -57,6 +64,9 @@ export default {
     }
   },
   methods: {
+    openChatSettings () {
+      this.$store.dispatch('OPEN_SETTING_WINDOW')
+    },
     async handleSendMessage (messageText) {
       const message = {
         id: this.messageIdCounter++,
@@ -221,6 +231,18 @@ export default {
   font-size: 14px;
   font-weight: 600;
   color: var(--sideBarColor);
+}
+
+.chat-setting-icon {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  & > svg {
+    width: 18px;
+    height: 18px;
+    fill: var(--sideBarIconColor);
+    opacity: 1;
+  }
 }
 
 .chat-clear-button {

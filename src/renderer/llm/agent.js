@@ -2,15 +2,13 @@ import { ChatOpenAI } from '@langchain/openai'
 import { StateGraph, MessagesAnnotation } from '@langchain/langgraph'
 import { toolNode, tools } from './agentTools'
 import { systemPrompt } from './prompts/systemPrompt'
+import store from '@/store'
 
 class Agent {
   constructor () {
-    this.model = this.createChatModel()
-    // this.streamingModel = this.createStreamingChatModel()
-    this.workflow = this.createWorkflowGraph()
-    this.app = this.workflow.compile({
-      recursionLimit: 15 // Reduce from default 25 to prevent excessive tool calling
-    })
+    this.model = null
+    this.workflow = null
+    this.app = null
     this.messages = []
 
     this.messages.push({
@@ -19,7 +17,20 @@ class Agent {
     })
   }
 
+  // Lazy initialization - only create the model when needed
+  ensureInitialized () {
+    if (!this.model) {
+      this.model = this.createChatModel()
+      this.workflow = this.createWorkflowGraph()
+      this.app = this.workflow.compile({
+        recursionLimit: 15
+      })
+    }
+  }
+
   async invoke (message) {
+    this.ensureInitialized()
+
     this.messages.push({ role: 'user', content: message })
 
     try {
@@ -118,8 +129,14 @@ class Agent {
   */
 
   createChatModel () {
+    const apiKey = store.state.preferences.openaiApiKey
+
+    if (!apiKey) {
+      throw new Error('OpenAI API key is not configured. Please set your API key in settings.')
+    }
+
     return new ChatOpenAI({
-      apiKey: process.env.OPENAI_API_KEY,
+      apiKey: apiKey,
       model: 'gpt-4.1-nano',
       temperature: 0
     }).bindTools(tools)
