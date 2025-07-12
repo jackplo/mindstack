@@ -45,7 +45,7 @@ export default {
   max-width: 100%;
   padding: 8px 12px;
   border-radius: 6px;
-  color: var(--sideBarColor);
+  color: var(--editorColor80);
   position: relative;
 }
 
@@ -59,7 +59,7 @@ export default {
   line-height: 1.4;
   word-wrap: break-word;
   white-space: pre-wrap;
-  color: var(--sideBarColor);
+  color: var(--editorColor80);
 }
 
 @keyframes fadeIn {

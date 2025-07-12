@@ -10,6 +10,7 @@ class Agent {
     this.workflow = null
     this.app = null
     this.messages = []
+    this.currentModel = null
 
     this.messages.push({
       role: 'system',
@@ -19,17 +20,22 @@ class Agent {
 
   // Lazy initialization - only create the model when needed
   ensureInitialized () {
-    if (!this.model) {
+    const selectedModel = store.state.preferences.openaiModel || 'gpt-4o-mini'
+
+    // Reinitialize if model changed
+    if (!this.model || this.currentModel !== selectedModel) {
       this.model = this.createChatModel()
       this.workflow = this.createWorkflowGraph()
       this.app = this.workflow.compile({
         recursionLimit: 15
       })
+      this.currentModel = selectedModel
     }
   }
 
   async invoke (message) {
     this.ensureInitialized()
+    console.log(this.currentModel)
 
     this.messages.push({ role: 'user', content: message })
 
@@ -130,6 +136,7 @@ class Agent {
 
   createChatModel () {
     const apiKey = store.state.preferences.openaiApiKey
+    const selectedModel = store.state.preferences.openaiModel || 'gpt-4o-mini'
 
     if (!apiKey) {
       throw new Error('OpenAI API key is not configured. Please set your API key in settings.')
@@ -137,7 +144,7 @@ class Agent {
 
     return new ChatOpenAI({
       apiKey: apiKey,
-      model: 'gpt-4.1-nano',
+      model: selectedModel,
       temperature: 0
     }).bindTools(tools)
   }

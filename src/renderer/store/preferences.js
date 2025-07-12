@@ -18,6 +18,7 @@ const state = {
 
   // Chat Setting States
   openaiApiKey: '',
+  openaiModel: 'gpt-4o-mini',
 
   editorFontFamily: 'Open Sans',
   fontSize: 16,

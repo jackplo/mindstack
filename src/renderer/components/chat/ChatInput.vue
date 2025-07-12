@@ -10,24 +10,34 @@
         class="chat-textarea"
         :style="{ height: textareaHeight + 'px' }"
       />
-      <button
-        @click="sendMessage"
-        :disabled="!inputMessage.trim()"
-        class="chat-send-button"
-        title="Send message (Enter)"
-      >
-        <svg viewBox="0 0 24 24" width="16" height="16">
-          <path fill="currentColor" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
-        </svg>
-      </button>
+      <div class="chat-input-buttons-wrapper">
+        <model-select />
+        <button
+          @click="sendMessage"
+          :disabled="!inputMessage.trim()"
+          class="chat-send-button"
+          title="Send message (Enter)"
+        >
+          <svg :viewBox="arrowUpIcon.viewBox">
+            <use :xlink:href="arrowUpIcon.url"></use>
+          </svg>
+        </button>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import ModelSelect from './ModelSelect'
+import ArrowUpIcon from '@/assets/icons/arrow-up.svg'
+
 export default {
   name: 'ChatInput',
+  components: {
+    ModelSelect
+  },
   data () {
+    this.arrowUpIcon = ArrowUpIcon
     return {
       inputMessage: '',
       textareaHeight: 36,
@@ -83,9 +93,10 @@ export default {
 }
 
 .chat-input-wrapper {
-  display: flex;
-  align-items: flex-end;
-  gap: 8px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 4px;
   padding: 8px;
   background: var(--editorBgColor);
   border: 1px solid var(--itemBgColor);
@@ -96,21 +107,26 @@ export default {
 .chat-textarea {
   flex: 1;
   min-height: 70px;
-  max-height: 120px;
+  max-height: 70px;
   padding: 0;
   border: none;
   outline: none;
   background: transparent;
-  color: var(--sideBarColor);
+  color: var(--editorColor80);
   font-family: var(--editorFontFamily);
   font-size: 14px;
   line-height: 20px;
   resize: none;
-  overflow-y: hidden;
+  overflow-y: auto;
+  scrollbar-width: 2px;
+}
+
+.chat-textarea::-webkit-scrollbar {
+  width: 0px;
 }
 
 .chat-textarea::placeholder {
-  color: var(--sideBarColor);
+  color: var(--editorColor80);
 }
 
 .chat-send-button {
@@ -126,6 +142,7 @@ export default {
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
+  justify-self: end;
 }
 
 .chat-send-button:hover:not(:disabled) {
@@ -151,5 +168,14 @@ export default {
 
 .chat-send-button:hover:not(:disabled) svg {
   transform: translateX(1px);
+}
+
+.chat-input-buttons-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 4px;
+  height: fit-content;
+  align-items: center;
 }
 </style>

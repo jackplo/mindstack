@@ -14,6 +14,8 @@
 
   "openaiApiKey": "",
 
+  "openaiModel": "gpt-4o-mini",
+
   "editorFontFamily": "Open Sans",
   "fontSize": 16,
   "lineHeight": 1.6,
